@@ -1,0 +1,78 @@
+/* Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+.navbar-left .logo {
+  font-size: 24px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar-center {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.search-input {
+  padding: 8px 40px 8px 15px; /* Adjust padding for better spacing */
+  border-radius: 25px;
+  border: 2px solid #ddd;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  width: 300px; /* Set a fixed width for consistency */
+  transition: all 0.3s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #27ae60; /* Green border on focus */
+  box-shadow: 0 0 10px rgba(39, 174, 96, 0.3); /* Green glow on focus */
+}
+
+.search-input::placeholder {
+  color: #888; /* Lighter placeholder text */
+  font-style: italic;
+}
+
+.search-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #888;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.search-icon:hover {
+  color: #27ae60; /* Green color on hover */
+}
+
+.navbar-right {
+  display: flex;
+  gap: 15px; /* Space between the icons */
+}
+
+.navbar-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar-icon {
+  font-size: 22px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-icon:hover {
+  color: #27ae60; /* Green color on hover */
+  transform: scale(1.1);
+}

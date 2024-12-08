@@ -1,0 +1,155 @@
+/* Main Product Details Page */
+.product-details {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-details-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.product-images {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-image {
+  width: 100%;
+  max-width: 500px;
+}
+
+.main-product-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-thumbnails {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.thumbnail {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.thumbnail:hover {
+  transform: scale(1.1);
+}
+
+.product-info {
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+}
+
+.product-price {
+  font-size: 28px;
+  color: #27ae60;
+  margin: 10px 0;
+}
+
+.product-description {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.add-to-cart-btn {
+  background-color: #1299f3;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+  font-size: 18px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #e67e22;
+  transform: translateY(-2px);
+}
+
+.product-specifications {
+  margin-top: 30px;
+}
+
+.product-specifications h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.product-specifications ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.product-specifications li {
+  font-size: 16px;
+  color: #555;
+  margin: 5px 0;
+}
+
+.product-reviews {
+  margin-top: 30px;
+}
+
+.product-reviews h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.stars {
+  color: #f39c12;
+  font-size: 18px;
+}
+
+.rating-count {
+  font-size: 16px;
+  color: #555;
+}
+
+.reviews-list {
+  margin-top: 20px;
+}
+
+.review {
+  margin-bottom: 20px;
+}
+
+.review-user {
+  font-weight: bold;
+}
+
+.review-comment {
+  font-style: italic;
+  color: #555;
+}
