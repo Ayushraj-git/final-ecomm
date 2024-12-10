@@ -169,3 +169,10 @@
     justify-content: center;
   }
 }
+
+.cart-item-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover; /* This ensures images are not distorted */
+  margin-right: 20px;
+}

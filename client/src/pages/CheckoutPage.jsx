@@ -16,16 +16,18 @@ const CheckoutPage = ({ cart, removeFromCart }) => {
     }));
   };
 
+  const validateEmail = (email) => /\S+@\S+\.\S+/.test(email);
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Check if all fields are filled
-    if (!formData.name || !formData.address || !formData.email) {
-      alert('Please fill in all the fields!');
+    if (!formData.name || !formData.address || !formData.email || !validateEmail(formData.email)) {
+      alert('Please fill in all the fields correctly!');
       return;
     }
-    // Proceed with the checkout
     alert('Checkout successful!');
   };
+
+  const totalPrice = cart.reduce((total, item) => total + item.price * item.quantity, 0);
 
   return (
     <div className="checkout-page-container">
@@ -81,6 +83,9 @@ const CheckoutPage = ({ cart, removeFromCart }) => {
             </button>
           </div>
         ))}
+      </div>
+      <div className="total-price">
+        <h3>Total Price: ${totalPrice.toFixed(2)}</h3>
       </div>
     </div>
   );
