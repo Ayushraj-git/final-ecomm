@@ -180,6 +180,10 @@ footer p {
 /* Home Page Layout */
 .home {
   padding: 20px;
+  font-size: 20px;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
   background-color: #f7f7f7;
 }
 
