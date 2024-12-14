@@ -30,7 +30,7 @@ const ProductCard = ({ product, addToCart }) => {
       </Link>
       <div className="product-info">
         <p className="product-description">{product.description}</p>
-        <p className="product-price">${product.price}</p>
+        <p className="product-price">₹{product.price}</p>
         <div className="product-actions">
           <button
             className={`add-to-cart-btn ${clickedAddToCart ? 'clicked' : ''}`}

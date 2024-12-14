@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-content">
-        <p>© 2024 My Store. All rights reserved.</p>
+        <p>© 2024 NOZAMA. All rights reserved.</p>
 
         {/* Social Media Links */}
         <div className="social-icons">
