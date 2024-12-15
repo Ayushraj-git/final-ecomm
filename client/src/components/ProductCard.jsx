@@ -35,7 +35,7 @@ const ProductCard = ({ product, addToCart }) => {
           <button
             className={`add-to-cart-btn ${clickedAddToCart ? 'clicked' : ''}`}
             onClick={handleAddToCartClick}
-            disabled={clickedAddToCart} // Disable button while it's in "clicked" state
+            disabled={clickedAddToCart} 
           >
             {clickedAddToCart ? "Added" : "Add to Cart"}
           </button>
