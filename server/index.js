@@ -180,6 +180,10 @@ const products = [
 app.get("/api/products", (req, res) => {
   res.json(products);
 });
+app.get("/", (req, res) => {
+  res.json({message:'hi'});
+});
+
 
 // Backend route to fetch product details by ID
 app.get('/api/products/:id', (req, res) => {
